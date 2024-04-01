@@ -19,9 +19,16 @@ class MainActivity : AppCompatActivity() {
             else if(it.itemId==R.id.home){
                 inflatefragment(HomeFragment.newInstance())
             }
+            else if(it.itemId==R.id.dashboard){
+                inflatefragment(DasboardFragment.newInstance())
+            }
+            else if(it.itemId==R.id.profile){
+                inflatefragment(ProfileFragment.newInstance())
+            }
             true
 
         }
+        bottomnav.selectedItemId=R.id.home
 
     }
 
