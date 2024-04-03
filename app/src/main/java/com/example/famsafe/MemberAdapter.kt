@@ -9,8 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MemberAdapter(private val listmembers: List<MemberModel>) : RecyclerView.Adapter<MemberAdapter.ViewHolder>() {
     class ViewHolder(val item:View):RecyclerView.ViewHolder(item) {
-                val imageuser=item.findViewById<ImageView>(R.id.img_person)
-                val name=item.findViewById<TextView>(R.id.txt_person)
+
+                val name=item.findViewById<TextView>(R.id.name)
+                val address=item.findViewById<TextView>(R.id.address)
+                val battery=item.findViewById<TextView>(R.id.battery_percent)
+                val distance=item.findViewById<TextView>(R.id.distance_value)
 
     }
 
@@ -24,6 +27,10 @@ class MemberAdapter(private val listmembers: List<MemberModel>) : RecyclerView.A
     override fun onBindViewHolder(holder: MemberAdapter.ViewHolder, position: Int) {
         val item=listmembers[position]
         holder.name.text=item.name
+        holder.address.text=item.address
+        holder.battery.text=item.battery
+        holder.distance.text=item.distance
+
     }
 
     override fun getItemCount(): Int {

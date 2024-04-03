@@ -27,15 +27,20 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val listmembers= listOf<MemberModel>(
-            MemberModel("Aryan Arora"),
-            MemberModel("Manali Arora"),
-            MemberModel("Satish Arora"),
+            MemberModel("Aryan Arora","dpr","100","220m"),
+            MemberModel("Manali Arora","bijnor","98","221m"),
+            MemberModel("Satish Arora","dpr","99","100m"),
+            MemberModel("Satish Arora","dpr","99","100m"),
+            MemberModel("Satish Arora","dpr","99","100m")
+
 
         )
         val adapter=MemberAdapter(listmembers)
         val recyclerView=requireView().findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.layoutManager=LinearLayoutManager(requireContext())
         recyclerView.adapter=adapter
+
+
     }
 
     companion object {

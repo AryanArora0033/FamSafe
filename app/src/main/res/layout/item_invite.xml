@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/invite_img"
+        android:layout_width="@dimen/dimen_96dp"
+        android:layout_height="@dimen/dimen_96dp"
+        android:src="@drawable/ic_photo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/ivite_text"
+        app:layout_constraintTop_toBottomOf="@id/invite_img"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/invite_img"
+        app:layout_constraintEnd_toEndOf="@id/invite_img"
+        android:layout_height="@dimen/dimen_16dp"
+        android:textColor="@color/black"
+        android:text="@string/name"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:padding="@dimen/dimen_8dp"
+        android:background="@drawable/shape_rounded_rect"
+        app:layout_constraintStart_toStartOf="@id/invite_img"
+        app:layout_constraintEnd_toEndOf="@id/invite_img"
+        app:layout_constraintTop_toBottomOf="@id/ivite_text">
+        <TextView
+            android:layout_margin="@+id/invite_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invite"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp"
+            android:id="@+id/invite"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
