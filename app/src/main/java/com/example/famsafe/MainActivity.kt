@@ -10,7 +10,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class MainActivity : AppCompatActivity() {
     val permissionarray= arrayOf(
         Manifest.permission.ACCESS_FINE_LOCATION,
-        Manifest.permission.INTERNET
+        Manifest.permission.INTERNET,
+        Manifest.permission.READ_CONTACTS
     )
     val code=786
     override fun onCreate(savedInstanceState: Bundle?) {
