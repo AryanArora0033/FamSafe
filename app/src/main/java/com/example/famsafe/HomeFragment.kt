@@ -8,8 +8,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -69,6 +72,18 @@ class HomeFragment : Fragment() {
         val inviteRecycler=requireView().findViewById<RecyclerView>(R.id.recycler_invite)
         inviteRecycler.layoutManager=LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
         inviteRecycler.adapter=inviteAdapter
+
+
+        val threedots=requireView().findViewById<ImageView>(R.id.threedots)
+        threedots.setOnClickListener{
+            SharedPreference.init(it.context)
+            SharedPreference.putBoolean(PrefConstant.Is_User_Logged_In,false)
+            FirebaseAuth.getInstance().signOut()
+            Toast.makeText(activity, "Signed Out", Toast.LENGTH_SHORT).show()
+
+
+        }
+
 
 
 

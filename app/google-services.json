@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "715665403250",
+    "project_id": "famsafe-d8faa",
+    "storage_bucket": "famsafe-d8faa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715665403250:android:db9c105159b909d70541eb",
+        "android_client_info": {
+          "package_name": "com.example.famsafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjBI6UfqmoQMPBgBS3uW9UGtSTSH8wRUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
