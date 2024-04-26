@@ -24,4 +24,5 @@ object SharedPreference {
     fun getString(key: String):String?{
         return preferences.getString(key,"User")
     }
+
 }

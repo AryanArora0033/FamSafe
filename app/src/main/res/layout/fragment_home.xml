@@ -34,7 +34,7 @@
         android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_threedots"/>
+        android:src="@drawable/ic_logout"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         tools:listitem="@layout/item_member"
@@ -51,12 +51,13 @@
         app:cardCornerRadius="@dimen/dimen_16dp"
         android:layout_margin="@dimen/dimen_16dp"
         android:elevation="@dimen/dimen_8dp">
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_invite"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_150dp"
-            tools:listitem="@layout/item_invite"
-            android:layout_marginTop="@dimen/dimen_8dp" />
+            android:layout_marginTop="@dimen/dimen_8dp"
+            tools:listitem="@layout/item_invite" />
 
 
     </com.google.android.material.card.MaterialCardView>
